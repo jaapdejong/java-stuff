@@ -49,9 +49,14 @@ public class CrunchifyIterateThroughList {
 		}
  
 		// collection stream() util: Returns a sequential Stream with this collection as its source
-		System.out.println("\n==> collection stream() util....");
+		System.out.println("\n==> Collection stream() util....");
 		crunchifyList.forEach((temp) -> {
 			System.out.println(temp);
 		});
+
+		// using method reference
+		System.out.println("\n==> Using Method Reference....");
+		crunchifyList.forEach(System.out::println);
+
 	}
 }
