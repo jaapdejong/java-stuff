@@ -1,0 +1,6 @@
+#!/bin/sh
+
+N=CrunchifyJava8ForEachTutorialMapAndList
+
+java ${N}
+
