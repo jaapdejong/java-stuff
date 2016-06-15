@@ -1,0 +1,6 @@
+#!/bin/sh
+
+N=CrunchifyIterateThroughList
+
+java ${N}
+
