@@ -1,0 +1,12 @@
+
+An Intent is exactly what it describes. It's an "intention" to do an action.
+
+An Intent is basically a message to say you did or want something to happen. Depending on the intent, apps or the OS might be listening for it and will react accordingly.
+
+Think of it as a blast email to a bunch of friends, in which you tell your friend John to do something. The other folks will ignore the email, but John will react to it.
+
+To listen for an intent (like the phone ringing, or an SMS is received), you implement a broadcast receiver.
+
+If you want to fire off an intent to do something, like pop up the dialer, you fire off an intent saying you will.
+
+http://www.vogella.de/articles/AndroidIntent/article.html
