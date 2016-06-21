@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.concurrent.ConcurrentHashMap;
 
 import java.util.List;
+import java.util.Iterator;
 import java.util.Map;
 
 public class CrunchifyJava8ForEachTutorialMapAndList {
@@ -49,11 +50,18 @@ public class CrunchifyJava8ForEachTutorialMapAndList {
 			log("crunchifyCompany: " + crunchifyEntry.getKey() + ", address: " + crunchifyEntry.getValue());
 		}
 
+		log("\n============ Method2: Using Iterator");
+		Iterator<Map.Entry<String, String>> crunchifyIterator = crunchifyCompanyMap.entrySet().iterator();
+		while (crunchifyIterator.hasNext()) {
+			Map.Entry<String, String> crunchifyEntry = crunchifyIterator.next();
+			log("crunchifyCompany: " + crunchifyEntry.getKey() + ", address: " + crunchifyEntry.getValue());
+		}
+
 	}
 
 	private static void CrunchifyJava8ForEachMethod4Map(Map<String, String> crunchifyCompanyMap) {
 
-		log("\n============ Method2: Java8 Method to iterate through Java Map");
+		log("\n============ Method3: Java8 Method to iterate through Java Map");
 		crunchifyCompanyMap.forEach((k, v) -> log("crunchifyCompany: " + k + ", address: " + v));
 
 	}
